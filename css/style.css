@@ -1,13 +1,16 @@
 * {
   box-sizing: border-box;
 }
-.body {
-  font-family: sans-serif;
+body {
+  font-family: SF Pro Display;
+  background: #e5e5e5;
 }
 .header {
   background: #fa8c16;
   padding-top: 16px;
   padding-bottom: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
 }
 .header-wrapper {
   max-width: 1200px;
@@ -74,4 +77,102 @@
 }
 .search-input::placeholder {
   color: #bfbfbf;
+}
+.content {
+  width: 1200px;
+  height: 90%;
+  margin: auto;
+}
+.posts {
+  max-width: 800px;
+}
+.post {
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 20px;
+}
+.post-body {
+  padding-top: 35px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 0;
+}
+.post-title {
+  margin-top: 0;
+  margin-bottom: 19px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+.post-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+.tags {
+  margin-bottom: 20px;
+}
+.tag {
+  color: #bfbfbf;
+  margin-right: 10px;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+}
+.post-footer {
+  background: #fafafa;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+.post-button .icon {
+  fill: #8c8c8c;
+}
+.post-buttons {
+  display: flex;
+  align-items: center;
+}
+.icon-like,
+.icon-comment {
+  margin-right: 6px;
+}
+.post-button {
+  background-color: transparent;
+  border: none;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22px;
+  margin-right: 19px;
+  cursor: pointer;
+}
+.post-author {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+.author-avatar {
+  height: 34px;
+  width: 34px;
+  margin-left: 9px;
+  border-radius: 4px;
+}
+.author-username {
+  display: block;
+  color: #8c8c8c;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.post-time {
+  color: #bfbfbf;
+  font-size: 12px;
+  line-height: 20px;
 }
