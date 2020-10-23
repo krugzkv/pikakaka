@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pikakaka</title>
+  <title>Pikakaka Main</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   </head>
 <body>
 <header class="header">
   <div class="header-wrapper">
-    <a href="/" class="header-logo">
+    <a href="index.html" class="header-logo">
       <img class="header-logo-image" src="img/logo.svg" alt="logo: Pikadu">
     </a>
     <nav class="header-nav">
@@ -19,16 +19,20 @@
         <li class="header-menu-item"><a href="#" class="header-menu-link">Лучщее</a></li>
         <li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
         <li class="header-menu-item"><a href="#" class="header-menu-link">Подписка</a></li>
-      </ul>
-   </nav>
+      </ul>   
+      </nav>
    <div class="input-group search">
      <input type="serach" class="search-input" placeholder="Поиск по сайту">
         <button class="search-button">
           <img src="img/search.svg" alt="search" class="search-icon">
         </button>
-    </div>
-  </div>
-  <!-- /.header-wraper -->
+   </div>
+   <a href="#" class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+   </div>
 </div>
 </header>
 <div class="content">
@@ -167,7 +171,7 @@
             </a></li>
           </ul>
         </nav>
-    <a class="button button-new-post">
+    <a href="new-post.html" class="button button-new-post">
       <svg width="11px" height="13px" class="icon icon-fire">
         <use xlink:href="img/icons.svg#fire"></use>
       </svg>Опубликовать пост
@@ -184,5 +188,6 @@
     <a href="#" class="ads"></a>
   </aside>
 </div>
+<script src="js/main.js"></script>
 </body>
 </html>
