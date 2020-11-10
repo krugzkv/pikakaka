@@ -199,11 +199,75 @@ body {
   border: 1px solid #e8e8e8;
   width: 31%;
 }
+
+.login {
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+.login-title {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #595959;
+}
+.login-input {
+  display: block;
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.login-forget {
+  text-align: center;
+  font-size: 12px;
+  color: #757575;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-style: italic;
+}
+.login-signin {
+  background-color: #fa8c16;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 32px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.login-signin:hover {
+  filter: opacity(80%);
+}
+.login-signin:active {
+  filter: brightness(85%);
+}
+.login-signup {
+  color: #fa8c16;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .user {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  padding: 15px 25px;
+  margin-bottom: 25px;
 }
 .user-avatar {
   width: 40px;
@@ -225,11 +289,15 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  margin-right: 25px;
-  margin-top: 23px;
-  margin-bottom: 23px;
 }
+
+.error {
+  border: 1px solid #ff0303;
+}
+
 .menu-nav {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e8e8e8;
   list-style-type: none;
   background: #ffffff;
@@ -278,7 +346,7 @@ body {
   cursor: pointer;
 }
 .button-new-post {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   width: 100%;
