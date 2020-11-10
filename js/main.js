@@ -55,6 +55,8 @@ const setUsers = {
         alert('Пользователь с такими данными не найден')
         emailInput.value = '';
         passwordInput.value = '';
+        emailInput.classList.add('error');
+        passwordInput.classList.add('error');
       }
     } else {
       alert('Проверте логин и пароль');
@@ -79,6 +81,8 @@ const setUsers = {
         alert('Пользователь с таким email уже зарегестрирован')
         emailInput.value = '';
         passwordInput.value = '';
+        emailInput.classList.add('error');
+        passwordInput.classList.add('error');
       }
     } else {
       alert('Проверте логин и пароль');
