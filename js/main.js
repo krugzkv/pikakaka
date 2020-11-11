@@ -12,7 +12,8 @@ const loginForm = document.querySelector('.login-form');
 const emailInput = document.querySelector('.login-email');
 const passwordInput = document.querySelector('.login-password');
 const loginSignup = document.querySelector('.login-signup');
-const menuNav = document.querySelector('.menu-nav')
+const menuNav = document.querySelector('.menu-nav');
+const buttonNewPost = document.querySelector('.button-new-post');
 
 const userElem = document.querySelector('.user');
 const userNameElem = document.querySelector('.user-login');
@@ -109,10 +110,12 @@ const toggleAuthDom = () => {
     userElem.style.display = '';
     menuNav.style.display = '';
     userNameElem.textContent = user.displayName;
+    buttonNewPost.style.display = '';
   } else {
     loginElem.style.display = '';
     userElem.style.display = 'none';
     menuNav.style.display = 'none';
+    buttonNewPost.style.display = 'none';
   }
 
 }
@@ -124,6 +127,7 @@ exit.addEventListener('click', event => {
   menuNav.style.display = 'none';
   emailInput.value = '';
   passwordInput.value = '';
+  buttonNewPost.style.display = 'none';
   emailInput.classList.remove('error');
   passwordInput.classList.remove('error');
 });

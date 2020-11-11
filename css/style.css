@@ -266,8 +266,7 @@ body {
   justify-content: space-between;
   background-color: #fafafa;
   border: 1px solid #e8e8e8;
-  padding: 15px 25px;
-  margin-bottom: 25px;
+  padding-right: 25px;
 }
 .user-avatar {
   width: 40px;
@@ -346,7 +345,7 @@ body {
   cursor: pointer;
 }
 .button-new-post {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
