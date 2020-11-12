@@ -291,6 +291,8 @@ const init = () => {
     const passwordValue = passwordInput.value;
 
     setUsers.logIn(emailValue, passwordValue, toggleAuthDom);
+    emailInput.classList.remove('error');
+    passwordInput.classList.remove('error');
     loginForm.reset();
   });
 
@@ -299,6 +301,8 @@ const init = () => {
 
     const emailValue = emailInput.value;
     const passwordValue = passwordInput.value;
+    emailInput.classList.remove('error');
+    passwordInput.classList.remove('error');
 
     setUsers.signUp(emailValue, passwordValue, toggleAuthDom);
     loginForm.reset();
