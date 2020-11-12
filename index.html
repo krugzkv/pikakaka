@@ -6,6 +6,15 @@
   <title>Pikakaka Main</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+
   <script src="js/main.js" defer></script>
   <script src="js/disabledScroll.js"></script>
   </head>
@@ -22,19 +31,19 @@
         <li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
         <li class="header-menu-item"><a href="#" class="header-menu-link">Подписка</a></li>
       </ul>   
-      </nav>
-   <div class="input-group search">
-     <input type="serach" class="search-input" placeholder="Поиск по сайту">
-        <button class="search-button">
-          <img src="img/search.svg" alt="search" class="search-icon">
-        </button>
-   </div>
-   <a href="#" class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
-   </div>
+        </nav>
+    <div class="input-group search">
+      <input type="serach" class="search-input" placeholder="Поиск по сайту">
+          <button class="search-button">
+            <img src="img/search.svg" alt="search" class="search-icon">
+          </button>
+    </div>
+    <a href="#" class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
 </div>
 </header>
 <div class="content">
@@ -44,9 +53,10 @@
       <form class="modal-addpost">
         <fieldset class="modal-body">
           <button class="close">&times;</button>
-          <input type="text" name="post-title" class="add-title" placeholder="Заголовок поста">
-          <textarea name="post-text" id="text" class="add-text" placeholder="Текст вашего поста" ></textarea>
-        <div class="ad-dbuttons">
+          <input type="text" name="title" class="add-title" placeholder="Заголовок поста">
+          <textarea name="text" class="add-text" placeholder="Текст вашего поста" ></textarea>
+          <input type="text" name="tags" class="add-tags" placeholder="Добавьте теги через запятую">
+        <div class="add-buttons">
           <button type="submit" class="button add-button"><svg width="11px" height="13px" class="icon icon-fire"><use xlink:href="img/icons.svg#fire"></use></svg>Опубликовать пост</button>
         <button class="button cancel-button">Отмена</button>
         </div>
@@ -68,16 +78,17 @@
     </div>
     <div class="user">
       <div class="user-container">
-        <a href="#" class="user-info"><img src="img/avatar2.jpg" alt="useravatar" class="user-avatar">
+        <a href="#" class="user-info"><img src="https://thispersondoesnotexist.com/image" alt="useravatar" class="user-avatar">
         <span class="user-login">Псих</span></a>
-        <a href="#" class="edit">
-          <img src="/img/edit.svg" alt="edit" class="icon icon-edit">
-        </a>
+        <div class="buttons-auth">
+                  <a href="#" class="edit">
+          <img src="/img/edit.svg" alt="edit" class="icon icon-edit"></a>
         <a href="#" class="iconpower">
           <svg width="20px" height="20px" class="icon-power">
             <use xlink:href="img/icons.svg#power"></use>
           </svg>
         </a>
+        </div>
       </div>
       <form class="edit-container">
         <h2 class="edit-title">Редактировать</h2>
