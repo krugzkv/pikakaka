@@ -261,16 +261,20 @@ body {
 }
 
 .user {
+  background-color: #fafafa;
+  border: 1px solid #e8e8e8;
+  padding: 5px 15px;
+}
+.user-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fafafa;
-  border: 1px solid #e8e8e8;
-  padding-right: 25px;
 }
+
 .user-avatar {
   width: 40px;
   height: 40px;
+  object-fit: cover;
   border-radius: 50%;
   margin: 15px 25px;
 }
@@ -283,11 +287,51 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #595959;
+  margin-right: auto;
 }
+
+.edit-container {
+  display: none;
+}
+.edit-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.edit-container.visible {
+  display: block;
+}
+.edit-label {
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.edit-input {
+  display: block;
+  margin: 5px auto;
+  padding: 5px 10px;
+  width: 100%;
+}
+.edit-btn {
+  background-color: #fa8c16;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  line-height: 32px;
+  font-size: 15px;
+  margin: 5px auto;
+  width: 100%;
+}
+.icon-edit {
+  width: 20px;
+  height: 20px;
+}
+
 .iconpower {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding-right: 25px;
 }
 
 .error {
@@ -428,6 +472,7 @@ body {
   border: 1px solid #e8e8e8;
   padding: 23px 30px;
   margin-bottom: 16px;
+  resize: none;
 }
 .add-text {
   min-height: 362px;
@@ -455,6 +500,47 @@ body {
 .add-post .button-outline {
   margin-right: 12px;
 }
+
+.modal-newpost {
+  display: none;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+.modal-newpost.visble {
+  display: flex;
+}
+
+.modal-addpost {
+  max-width: 780px;
+  width: 95%;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 20px 25px;
+}
+
+.modal-body {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  font-size: 36px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  margin-bottom: 10px;
+  top: 10px;
+  right: 30px;
+}
+
 @media (max-width: 990px) {
   .menu-toggle {
     display: flex;
